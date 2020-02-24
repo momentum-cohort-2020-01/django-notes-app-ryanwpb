@@ -3,14 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}" />
     <title>Notes App</title>
   </head>
   <body>
-    <h2>Hello World</h2>
-    {% for note in notes.values %}
+    <main>
+      <h2>Hello World</h2>
+      {% for note in notes.values %}
 
-    <h4 style="display: block;">{{note.title}}</h4>
-    <p style="display: block;">{{note.body}}</p>
-    {% endfor %}
+      <h4 class="note-title">{{note.title}}</h4>
+      <p class="note-desc">{{note.body}}</p>
+      {% endfor %}
+    </main>
   </body>
 </html>
