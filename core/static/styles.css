@@ -7,6 +7,10 @@ main {
   margin: 3rem;
 }
 
+.note {
+  margin: 1rem auto;
+}
+
 .note-title {
   display: block;
   margin-bottom: 1rem;
