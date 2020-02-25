@@ -1,6 +1,6 @@
-{% extends 'index.html' %} {% block content %} {% for note in notes.values %}
+{% extends 'index.html' %} {% block content %} {% for note in notes %}
 <div class="note">
-  <h4 class="note-title">{{note.title}}</h4>
+  <h4 class="note-title" id="{{note.pk}}">{{note.title}}</h4>
   <p class="note-desc">{{note.body}}</p>
 </div>
 {% endfor %} {% endblock %}
