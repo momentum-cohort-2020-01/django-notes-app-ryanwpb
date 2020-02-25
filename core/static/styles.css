@@ -3,12 +3,20 @@
   padding: 0;
 }
 
+body {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+}
+
 main {
   margin: 3rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
 .note {
-  margin: 1rem auto;
+  margin: 1rem;
+  padding: 1rem;
 }
 
 .note-title {
@@ -18,4 +26,12 @@ main {
 
 .note-desc {
   display: block;
+}
+
+@media only screen and (max-width: 500px) {
+  main {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
 }
