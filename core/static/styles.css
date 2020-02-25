@@ -16,12 +16,18 @@ body {
 
 .header h2 {
   color: #ff5a5f;
+  font-weight: 400;
 }
 
 main {
   margin: 3rem 1rem;
   display: grid;
   grid-template-columns: auto auto auto;
+}
+
+.note-link {
+  color: #484848;
+  text-decoration: none;
 }
 
 .note {
