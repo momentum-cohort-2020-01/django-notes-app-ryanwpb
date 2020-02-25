@@ -4,7 +4,10 @@ from django.http import HttpResponse
 import data
 
 
-def index(request):
+def notes_list(request):
     notes = data.NOTES
-    return render(request, 'index.html', {'notes': notes})
-   
+    return render(request, 'core/notes_list.html', {'notes': notes})
+
+def notes_detail(request, pk):
+    note = data.NOTES[str(pk)]
+    return render(request, 'core/notes_detail.html', {'note': note})

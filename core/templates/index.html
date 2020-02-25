@@ -12,14 +12,9 @@
     <title>Notes App</title>
   </head>
   <body>
-    <h2>Hello World</h2>
+    <h2>Header Here</h2>
     <main>
-      {% for note in notes.values %}
-      <div class="note">
-        <h4 class="note-title">{{note.title}}</h4>
-        <p class="note-desc">{{note.body}}</p>
-      </div>
-      {% endfor %}
+      {% block content %} {% endblock %}
     </main>
   </body>
 </html>

@@ -6,6 +6,7 @@
 body {
   font-family: "Oswald", sans-serif;
   letter-spacing: 1px;
+  color: #484848;
 }
 
 main {
@@ -20,8 +21,10 @@ main {
 }
 
 .note-title {
+  font-size: 20px;
   display: block;
   margin-bottom: 1rem;
+  font-weight: 400;
 }
 
 .note-desc {
