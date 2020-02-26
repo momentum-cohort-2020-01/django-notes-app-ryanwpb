@@ -14,6 +14,7 @@
   <body>
     <div class="header">
       <h2>Welcome to my Notes App!</h2>
+      <a class="home" href="{% url 'notes-list' %}">Home</a>
     </div>
     <main>
       {% block content %} {% endblock %}

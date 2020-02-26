@@ -12,6 +12,9 @@ body {
 
 .header {
   padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header h2 {
@@ -22,7 +25,12 @@ body {
 main {
   margin: 3rem 1rem;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+a.home {
+  color: #ff5a5d;
+  text-decoration: none;
 }
 
 .note-link {
@@ -33,10 +41,16 @@ main {
 .note {
   margin: 1rem;
   padding: 1rem;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+.note:hover {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
 }
 
 .note-title {
-  font-size: 20px;
+  font-size: 25px;
   display: block;
   margin-bottom: 1rem;
   font-weight: 400;
