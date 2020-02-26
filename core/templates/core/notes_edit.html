@@ -2,7 +2,7 @@
 <div class="void"></div>
 <div class="form-container">
   <form method="POST" class="note-form">
-    <h2 class="form-title">Add a new note!</h2>
+    <h2 class="form-title">Add a new note.</h2>
     {% csrf_token %} {{ form.as_p }}
     <button type="submit" class="save btn btn-default">Save</button>
   </form>

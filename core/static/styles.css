@@ -66,12 +66,24 @@ main {
 .note-title {
   font-size: 25px;
   display: block;
-  margin-bottom: 1rem;
   font-weight: 400;
 }
 
 .note-desc {
   display: block;
+}
+
+.top-note {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+a.btn.btn-edit {
+  text-decoration: none;
+  font-size: 15px;
+  color: #ff5a5d;
 }
 
 form.note-form {
