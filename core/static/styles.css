@@ -33,6 +33,16 @@ a.home {
   text-decoration: none;
 }
 
+.block-title {
+  margin: 0 3rem;
+}
+
+.block-title h2 {
+  font-weight: 400;
+  padding-bottom: 1rem;
+  border-bottom: solid 1px #484848;
+}
+
 .note-link {
   color: #484848;
   text-decoration: none;
