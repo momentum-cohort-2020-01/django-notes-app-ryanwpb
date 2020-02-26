@@ -1,7 +1,11 @@
 {% extends 'index.html' %} {% block content %}
-<h2>New Note</h2>
-<form method="POST" class="note-form">
-  {% csrf_token %} {{ form.as_p }}
-  <button type="submit" class="save btn btn-default">Save</button>
-</form>
+<div class="void"></div>
+<div class="form-container">
+  <form method="POST" class="note-form">
+    <h2 class="form-title">Add a new note!</h2>
+    {% csrf_token %} {{ form.as_p }}
+    <button type="submit" class="save btn btn-default">Save</button>
+  </form>
+</div>
+<div class="void"></div>
 {% endblock %}
