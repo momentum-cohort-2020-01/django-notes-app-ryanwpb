@@ -20,6 +20,7 @@ from core import views
 urlpatterns = [
     path('', views.notes_list, name='notes-list'),
     path('notes/<int:pk>', views.notes_detail, name='notes-detail'),
+    path('notes/new/', views.notes_new, name='notes-new'),
     path('admin/', admin.site.urls),
 ]
 

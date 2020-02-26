@@ -28,9 +28,13 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-a.home {
+.menu-link {
   color: #ff5a5d;
   text-decoration: none;
+}
+
+.menu-link:not(:last-child) {
+  margin-right: 1rem;
 }
 
 .block-title {

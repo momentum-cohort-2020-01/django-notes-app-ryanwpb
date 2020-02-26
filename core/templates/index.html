@@ -14,7 +14,10 @@
   <body>
     <div class="header">
       <h2>Ryan / Graham</h2>
-      <a class="home" href="{% url 'notes-list' %}">Home</a>
+      <div class="menu">
+        <a class="menu-link" href="{% url 'notes-list' %}">Home</a>
+        <a class="menu-link" href="{% url 'notes-new' %}">Add Note</a>
+      </div>
     </div>
     <div class="block-title">
       <h2>My Notes.</h2>
