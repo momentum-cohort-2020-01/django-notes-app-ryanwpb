@@ -27,3 +27,16 @@ def notes_new(request):
     else:
         form = NoteForm()
     return render(request, 'core/notes_edit.html', {'form': form})
+
+def notes_edit(request, pk):
+    note = Note.objects.get(pk=pk)
+    if request.method == "POST":
+        form = NoteForm(request.POST, instance=note)
+        if form.is_valid():
+            note = form.save(commit=False)
+            note.author = request.user
+            note.save()
+            return redirect('notes-detail', note.pk)
+    else:
+        form = NoteForm(instance=note)
+    return render(request, 'core/notes_edit.html', {'form': form})

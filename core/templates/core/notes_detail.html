@@ -1,6 +1,7 @@
 {% extends 'index.html' %} {% block content %}
 
 <div class="note">
+  <a class="btn btn-default" href="{% url 'notes-edit' note.pk %}">Edit</a>
   <h4 class="note-title">{{note.title}}</h4>
   <p class="note-body">{{note.body}}</p>
 </div>
