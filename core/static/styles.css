@@ -70,10 +70,14 @@ a.home {
   display: block;
 }
 
+@media only screen and (max-width: 767px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   main {
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }
