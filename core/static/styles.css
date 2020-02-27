@@ -15,6 +15,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
 }
 
 .header h2 {
@@ -69,6 +74,7 @@ main {
   font-weight: 400;
   padding-bottom: 1rem;
   border-bottom: solid 1px #484848;
+  margin: 6rem 3rem 0;
 }
 
 .note-link {
