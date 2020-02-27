@@ -28,7 +28,7 @@ body {
 }
 
 main {
-  margin: 1rem;
+  margin: 3rem 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
