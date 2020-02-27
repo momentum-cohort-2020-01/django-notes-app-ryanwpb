@@ -105,11 +105,13 @@ form p {
 textarea#id_body {
   width: 100%;
   border: solid 1px #e5e5e5;
+  padding: 1rem;
   border-radius: 0.25rem;
   font-size: 17px;
   color: #484848;
   font-weight: 200;
   font-family: "Oswald";
+  height: 6em;
 }
 
 button.save.btn.btn-default {
