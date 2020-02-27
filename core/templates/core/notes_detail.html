@@ -1,5 +1,6 @@
-{% extends 'index.html' %} {% block content %}
-
+{% extends 'index.html' %} {% block heading %}
+<h2>{{note.title}}</h2>
+{% endblock %} {% block content %}
 <div class="note">
   <div class="top-note">
     <h4 class="note-title">{{note.title}}</h4>

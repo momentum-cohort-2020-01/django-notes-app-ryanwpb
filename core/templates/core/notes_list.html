@@ -1,4 +1,6 @@
-{% extends 'index.html' %} {% block content %} {% for note in notes %}
+{% extends 'index.html' %} {% block heading %}
+<h2>Welcome to my Notes App</h2>
+{% endblock %} {% block content %} {% for note in notes %}
 <div class="note">
   <a href="{% url 'notes-detail' note.pk %}" class="note-link">
     <h4 class="note-title" id="{{note.pk}}">{{note.title}}</h4>
