@@ -5,6 +5,7 @@
   <div class="top-note">
     <h4 class="note-title">{{note.title}}</h4>
     <a class="btn btn-edit" href="{% url 'notes-edit' note.pk %}">Edit</a>
+    <a class="btn btn-edit" href="{% url 'notes-delete' note.pk %}">Delete</a>
   </div>
   <p class="note-body">{{note.body}}</p>
 </div>
