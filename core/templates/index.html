@@ -8,6 +8,7 @@
       rel="stylesheet"
     />
     {% load static %}
+    <script src="/static/main.js" defer></script>
     <link rel="stylesheet" href="{% static 'styles.css' %}" />
     <title>Notes App</title>
   </head>
@@ -15,6 +16,15 @@
     <div class="header">
       <h2>Ryan / Graham</h2>
       <div class="menu">
+        <a class="menu-link" href="{% url 'notes-list' %}">Home</a>
+        <a class="menu-link" href="{% url 'notes-new' %}">Add Note</a>
+      </div>
+      <div id="lines">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+      <div class="mobile-menu">
         <a class="menu-link" href="{% url 'notes-list' %}">Home</a>
         <a class="menu-link" href="{% url 'notes-new' %}">Add Note</a>
       </div>
