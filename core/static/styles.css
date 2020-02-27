@@ -170,6 +170,7 @@ input#id_title {
 
 #lines {
   display: none;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 767px) {
@@ -195,7 +196,7 @@ input#id_title {
     position: fixed;
     height: 100%;
     background: #fe5151;
-    right: -270px;
+    left: -270px;
     top: 0;
     z-index: 10;
     width: 270px;
